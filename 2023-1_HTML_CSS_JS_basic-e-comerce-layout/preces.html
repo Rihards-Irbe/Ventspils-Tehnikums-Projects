@@ -1,0 +1,123 @@
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<script type="text/javascript" src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body onload="cart()">
+
+<div class="square"></div>
+<div class="square2"></div>
+
+<div id="cpu" onclick="Animation()"></div>
+<div id="gpu" onclick="gpu_animation()"></div>
+<div id="mobo" onclick="mobo_animation()"></div>
+<div id="psu" onclick="psu_animation()"></div>
+<div id="pccase" onclick="pccase_animation()"></div>
+<div id="ssd" onclick="ssd_animation()"></div>
+    
+<i id="cart-btn" class="fa fa-shopping-cart"></i>
+<div id="cart-dropdown" class="hidden">
+  <ul id="cart-items"></ul>
+</div>
+
+<div class= "square_style" id="my-square" style="display: none;">
+  <p id="cpu_title">CPU: i5 12600k</p>
+  <img src="https://techmatched.pk/wp-content/uploads/2022/03/4-5.png" id="cpu_picture">
+  <p id="cpu_description">Specs:</p>
+  <p class="cpu_description_2">Total Cores: 10</p>
+  <p class="cpu_description_2">Performance-cores: 6</p>
+  <p class="cpu_description_2">Efficiency-cores: 4</p>
+  <p class="cpu_description_2">Total Threads: 16</p>
+  <p class="cpu_description_2">Max Frequency: 4.90 GHz</p>
+  <p class="cpu_description_2">Cache: 20MB</p>
+  <p class="cpu_description_2">Socket: LGA1700</p>
+  <p id="price_txt">Price: </p>
+  <p id="price_ammount">297,00€</p>
+    <button class="add-to-cart" id="button-68" data-item="CPU: i5 12600K">Add To Cart</button>
+  <button id="Close">X</button>
+</div>
+
+<div class= "square_style_2" id="my-square_2" style="display: none;">
+  <p id="gpu_title">GPU: RTX3070</p>
+  <img src="https://www.dateks.lv/images/pic/2400/2400/810/1027.jpg" id="gpu_picture">
+  <p id="gpu_description">Specs:</p>
+  <p class="gpu_description_2">Core Clock: 1815 MHz</p>
+  <p class="gpu_description_2">CUDA® Cores: 5888</p>
+  <p class="gpu_description_2">Memory Clock: 14000 MHz</p>
+  <p class="gpu_description_2">Memory Size: 8 GB</p>
+  <p class="gpu_description_2">Memory Type: GDDR6</p>
+  <p class="gpu_description_2">Recommended PSU: 650W</p>
+  <p id="price_txt">Price: </p>
+  <p id="price_ammount">612,00€</p>
+  <button class="add-to-cart" id="button-68_gpu_placement" data-item="GPU: RTX 3070">Add To Cart</button>
+  <button id="Close_2">X</button>
+</div>
+
+<div class= "square_style_3" id="my-square_3" style="display: none;">
+  <p id="mobo_title">Motherboard: MSI PRO Z690-A</p>
+  <img src="https://www.dateks.lv/images/pic/2400/2400/954/1085.jpg" id="mobo_picture">
+  <p id="mobo_description">Specs:</p>
+  <p class="mobo_description_2">Socket: LGA1700</p>
+  <p class="mobo_description_2">Chipset: Intel® Z690 Chipset</p>
+  <p class="mobo_description_2">DDR4 Memory: 2133 - 4200 MHz</p>
+  <p class="mobo_description_2">Dimm Slots: 4</p>
+  <p class="mobo_description_2">Form Factor: ATX</p>
+  <p id="price_txt">Price: </p>
+  <p id="price_ammount">198,00€</p>
+  <button class="add-to-cart" id="button-68_mobo_placement" data-item="Motherboard: MSI PRO Z690-A">Add To Cart</button>
+  <button id="Close_3">X</button>
+</div>
+
+<div class= "square_style_4" id="my-square_4" style="display: none;">
+  <p id="psu_title">PSU: EVGA SuperNOVA GT 750, 750W, 80PLUS Gold</p>
+  <img src="https://www.dateks.lv/images/pic/2400/2400/835/1082.jpg" id="psu_picture">
+  <p id="psu_description">Specs:</p>
+  <p class="psu_description_2">Total Power: 750W</p>
+  <p class="psu_description_2">Operating Temperature: 0° to 50° C</p>
+  <p class="psu_description_2">Modular: Yes</p>
+  <p class="psu_description_2">Efficiency: 80 Plus Gold</p>
+  <p id="price_txt">Price: </p>
+  <p id="price_ammount">122,00€</p>
+   <button class="add-to-cart" id="button-68_psu_placement" data-item="PSU: EVGA SuperNova GT 750">Add To Cart</button>
+  <button id="Close_4">X</button>
+</div>
+
+<div class= "square_style_5" id="my-square_5" style="display: none;">
+  <p id="psu_title">Case: AeroCool Cylon</p>
+  <img src="https://www.dateks.lv/images/pic/2400/2400/364/600.jpg" id="pccase_picture">
+  <p id="pccase_description">Specs:</p>
+  <p class="pccase_description_2">Case Type: Mid Tower</p>
+  <p class="pccase_description_2">Motherboards: ATX/micro ATX/mini-ITX</p>
+  <p class="pccase_description_2">Power Supply: ATX PSU</p>
+  <p class="pccase_description_2">Air Cooling: <br> <li class="pccase_description_2">Front: 120mm x 3 </li> <li class="pccase_description_2">Top: 120mm x 1 </li>  <li class="pccase_description_2">Rear: 120mm x 1 </li> <li class="pccase_description_2"> Supports VGA Fan: 120mm x 2 </li></p>
+  <p id="price_txt">Price: </p>
+  <p id="price_ammount">51,60€</p>
+   <button class="add-to-cart" id="button-68_pccase_placement" data-item="Case: AeroCool Cylon">Add To Cart</button>
+  <button id="Close_5">X</button>
+</div>
+
+<div class= "square_style_6" id="my-square_6" style="display: none;">
+  <p id="ssd_title">SSD: Samsung 980 PCIe 3.0 NVMe™ M.2 SSD</p>
+  <img src="https://images.samsung.com/is/image/samsung/p6pim/lv/mz-v8v1t0bw/gallery/lv-980-nvme-m2-ssd-mz-v8v1t0bw-505022413?$650_519_PNG$" id="ssd_picture">
+  <p id="ssd_description">Specs:</p>
+  <p class="ssd_description_2">Capacity: 1Tb</p>
+  <p class="ssd_description_2">Read: Up to 3,500 MB/s</p>
+  <p class="ssd_description_2">Write: Up to 3,000 MB/s</p>
+  <p class="ssd_description_2">Hard Disk Interface: PCIE x 4</p>
+  <p class="ssd_description_2">Technology: PCI Express 3.0</p>
+  <p class="ssd_description_2">Brand: Samsung</p>
+  <p id="price_txt">Price: </p>
+  <p id="price_ammount">101,00€</p>
+   <button class="add-to-cart" id="button-68_ssd_placement" data-item="SSD: Samsung 980 PCIe 3.0 NVMe™">Add To Cart</button>
+  <button id="Close_6">X</button>
+</div>
+
+<h2>Rihards Irbe inc</h2>
+<button id="poga1" type="button" onclick="window.location.href = 'index.html';">Sākums</button>
+<button id="poga2" type="button" onclick="window.location.href = 'preces.html';">Preces</button>
+<button id="poga3" type="button" onclick="window.location.href = 'parmums.html';">Par mums</button>
+
+</body>

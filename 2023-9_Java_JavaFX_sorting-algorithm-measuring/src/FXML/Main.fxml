@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="1418.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller_Main">
+   <children>
+      <Button layoutX="271.0" layoutY="525.0" mnemonicParsing="false" onAction="#SelectedMethod" text="Izpildīt">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <RadioButton layoutX="461.0" layoutY="150.0" mnemonicParsing="false" text="Merge Sort">
+         <toggleGroup>
+            <ToggleGroup fx:id="Algorithm" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="97.0" layoutY="150.0" mnemonicParsing="false" text="Neizmantojot" toggleGroup="$Algorithm" />
+      <RadioButton layoutX="398.0" layoutY="190.0" mnemonicParsing="false" text="Javas iebūvētais" toggleGroup="$Algorithm" />
+      <Text layoutX="198.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kārtošanas algoritmi:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <RadioButton layoutX="214.0" layoutY="150.0" mnemonicParsing="false" text="BubbleSort" toggleGroup="$Algorithm" />
+      <RadioButton layoutX="334.0" layoutY="150.0" mnemonicParsing="false" text="Selection Sort" toggleGroup="$Algorithm" />
+      <RadioButton layoutX="270.0" layoutY="190.0" mnemonicParsing="false" text="Shell Sort" toggleGroup="$Algorithm" />
+      <RadioButton layoutX="155.0" layoutY="190.0" mnemonicParsing="false" text="Quick Sort" toggleGroup="$Algorithm" />
+      <Text layoutX="228.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datu Struktura:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <RadioButton layoutX="189.0" layoutY="261.0" mnemonicParsing="false" text="Masivs">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="DataStructure" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="344.0" layoutY="261.0" mnemonicParsing="false" text="ArrayList" toggleGroup="$DataStructure">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Text layoutX="230.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Elementu skaits:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <RadioButton layoutX="119.0" layoutY="340.0" mnemonicParsing="false" text="1,000">
+         <toggleGroup>
+            <ToggleGroup fx:id="Amount" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="186.0" layoutY="340.0" mnemonicParsing="false" text="10,000" toggleGroup="$Amount" />
+      <RadioButton layoutX="257.0" layoutY="340.0" mnemonicParsing="false" text="100,000" toggleGroup="$Amount" />
+      <RadioButton layoutX="334.0" layoutY="340.0" mnemonicParsing="false" text="1,000,000" toggleGroup="$Amount" />
+      <RadioButton layoutX="422.0" layoutY="340.0" mnemonicParsing="false" text="10,000,000" toggleGroup="$Amount" />
+      <TableView fx:id="SortingTable" editable="true" layoutX="616.0" layoutY="39.0" prefHeight="444.0" prefWidth="718.0">
+         <columns>
+            <TableColumn id="TableMethod" fx:id="TableMethod" prefWidth="75.0" text="Sorting Method" />
+            <TableColumn id="TableStructure" fx:id="TableStructure" prefWidth="75.0" text="Data Structure" />
+            <TableColumn id="TableAmount" fx:id="TableAmount" prefWidth="75.0" text="Amount" />
+            <TableColumn id="TableTimeSec" fx:id="TableTimeSec" prefWidth="75.0" text="Time (sec)" />
+            <TableColumn id="TableTimeMs" fx:id="TableTimeMs" prefWidth="75.0" text="Time(ms)" />
+            <TableColumn id="TableTimeMsc" fx:id="TableTimeMsc" prefWidth="99.0" text="Time(makro sec)" />
+            <TableColumn id="TableTimeNanSec" fx:id="TableTimeNanSec" prefWidth="99.0" text="Time(nano sec)" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="768.0" layoutY="521.0" mnemonicParsing="false" onAction="#DeleteSelectedRow" prefHeight="51.0" prefWidth="176.0" text="Delete Selected Row" />
+      <Button fx:id="AverageButton" layoutX="1063.0" layoutY="521.0" mnemonicParsing="false" onAction="#ShowChart" prefHeight="51.0" prefWidth="176.0" text="Vidējais" />
+      <Text layoutX="149.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veidot Jaunu Datu Strukturu?">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <RadioButton layoutX="246.0" layoutY="406.0" mnemonicParsing="false" text="Jā">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="JaunaDatuStruktura" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="323.0" layoutY="406.0" mnemonicParsing="false" text="Nē" toggleGroup="$JaunaDatuStruktura">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Text layoutX="206.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veikt 10 mērījumus?">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <RadioButton layoutX="251.0" layoutY="470.0" mnemonicParsing="false" text="Jā">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Merijumi" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="323.0" layoutY="470.0" mnemonicParsing="false" text="Nē" toggleGroup="$Merijumi">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="916.0" layoutY="601.0" mnemonicParsing="false" onAction="#ShowBubbleSortTable" prefHeight="51.0" prefWidth="176.0" text="Threads Salīdzinājums" />
+      <Button fx:id="RainbowButton" layoutX="173.0" layoutY="592.0" mnemonicParsing="false" onAction="#ShowNewDataStructurePane" prefHeight="44.0" prefWidth="281.0" style="-fx-cursor: hand; -fx-border-radius: 7px; -fx-border-color: black; -fx-background-radius: 7px; -fx-font-weight: bold;" text="Izpildīt 30 Mērījumus Ar Katru Algoritmu">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="IzveletsKartosanas" fill="RED" layoutX="473.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nav izvēlēts Kārtošanas algoritms" visible="false" />
+      <Text fx:id="IzveletaDatuStruktura" fill="RED" layoutX="473.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nav izvēlēta Datu Struktura" visible="false" />
+      <Text fx:id="IzveletsElementuSkaits" fill="RED" layoutX="473.0" layoutY="551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nav izvēlēts Elementu skaits" visible="false" />
+      <Text fx:id="IzveletaJaunaDatuStruk" fill="RED" layoutX="473.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nav izvēlēts Veidot Jaunu Datu Strukturu?" visible="false" />
+      <Text fx:id="IzveletsVeiktDesmit" fill="RED" layoutX="473.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nav izvēlēts Vai veikt 10 mērījumus " visible="false" />
+      <Text fx:id="TenMeasurements" disable="true" fill="RED" layoutX="1063.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veic vismaz 10 mērījumus, lai aktivizetu so pogu" visible="false" wrappingWidth="254.185546875" />
+      <Pane fx:id="ChartPane" layoutX="190.0" layoutY="30.0" prefHeight="666.0" prefWidth="1039.0" style="-fx-background-color: lightgray; -fx-border-color: black;" visible="false">
+         <children>
+            <BarChart fx:id="Chart" layoutX="58.0" layoutY="45.0" prefHeight="326.0" prefWidth="923.0" title="Average" visible="false">
+               <xAxis>
+                  <CategoryAxis animated="false" label="Algorithm Name" side="BOTTOM" fx:id="x">
+                     <tickLabelFont>
+                        <Font name="System Bold" size="15.0" />
+                     </tickLabelFont>
+                  </CategoryAxis>
+               </xAxis>
+               <yAxis>
+                  <NumberAxis fx:id="y" animated="false" label="Time" side="LEFT" />
+               </yAxis>
+            </BarChart>
+            <Button fx:id="ChartClose" layoutX="1014.0" layoutY="-16.0" mnemonicParsing="false" onAction="#CloseChartPane" prefHeight="44.0" prefWidth="50.0" style="-fx-background-color: red;" text="X" />
+            <TableView fx:id="AverageTimeTable" layoutX="118.0" layoutY="379.0" prefHeight="262.0" prefWidth="847.0">
+              <columns>
+                <TableColumn fx:id="SortingAlgorithmName" prefWidth="75.0" text="Sorting Algorithm" />
+                <TableColumn fx:id="AverageTime" prefWidth="75.0" text="Average Time per 1000 sorted (ms)" />
+                  <TableColumn fx:id="TotalTime" prefWidth="75.0" text="Kopejais laiks (ms)" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Text fx:id="AlgorithmError" layoutX="186.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salīdzini vismaz 2 Kārtošanas algoritmus, lai vizuali atspoguļotu datus" visible="false">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="CreateNewDataStructurePane" layoutX="257.0" layoutY="135.0" prefHeight="411.0" prefWidth="904.0" style="-fx-background-color: lightgray; -fx-border-color: black;" visible="false">
+         <children>
+            <Text layoutX="28.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vai Katram Algoritmam Veidot Jaunu Datu Strukturu?">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="VeidotJaunuJa" layoutX="299.0" layoutY="284.0" mnemonicParsing="false" text="Jā">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="NewAlgorithmStructure" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="VeidotJaunuNe" layoutX="525.0" layoutY="284.0" mnemonicParsing="false" text="Ne" toggleGroup="$NewAlgorithmStructure">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </RadioButton>
+            <Button layoutX="389.0" layoutY="328.0" mnemonicParsing="false" onAction="#DoEachAlgorithm30times" text="Submit">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Button layoutX="889.0" layoutY="-18.0" mnemonicParsing="false" onAction="#CloseNewDataStructurePane" style="-fx-background-color: red;" text="X">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Text layoutX="336.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datu Struktura">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="Masivs" layoutX="240.0" layoutY="70.0" mnemonicParsing="false" text="Masivs">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="NewDataStructure" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="ArrayList" layoutX="529.0" layoutY="70.0" mnemonicParsing="false" text="ArrayList" toggleGroup="$NewDataStructure">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </RadioButton>
+            <Text layoutX="336.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Elementu Skaits:">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="viens" layoutX="171.0" layoutY="188.0" mnemonicParsing="false" text="1,000">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="AmountOfElements" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="divi" layoutX="278.0" layoutY="188.0" mnemonicParsing="false" text="10,000" toggleGroup="$AmountOfElements">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="tris" layoutX="398.0" layoutY="188.0" mnemonicParsing="false" text="100,000" toggleGroup="$AmountOfElements">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="cetri" layoutX="525.0" layoutY="188.0" mnemonicParsing="false" text="1,000,000" toggleGroup="$AmountOfElements">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="pieci" layoutX="662.0" layoutY="187.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="141.0" text="10,000,000" toggleGroup="$AmountOfElements">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <Text fx:id="IzveletDatuStrukturu" fill="RED" layoutX="585.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nav izvēlēta Datu Struktura" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="IzveletElementuSkait" fill="RED" layoutX="611.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nav izvēlēts Elementu skaits" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="IzveletVeidotJaunu" fill="RED" layoutX="607.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nav izvēlēts Veidot Jaunu Datu Strukturu?" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="BubbleSortTablePane" layoutX="22.0" layoutY="69.0" prefHeight="603.0" prefWidth="1380.0" style="-fx-background-color: lightgray; -fx-border-color: black;" visible="false">
+         <children>
+            <TableView fx:id="BubbleResults" layoutX="106.0" layoutY="178.0" prefHeight="411.0" prefWidth="1169.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="75.0" text="Mēríjuma ID" />
+                <TableColumn fx:id="BubbleAmount" prefWidth="105.0" text="Amount" />
+                  <TableColumn fx:id="Bubble_one" prefWidth="209.0" text="Bubble Sort bez thread (ms) masīvs" />
+                  <TableColumn fx:id="Bubble_two" prefWidth="202.0" text="Bubble Sort ar thread (ms) masīvs" />
+                  <TableColumn fx:id="Bubble_Difference_one" prefWidth="63.0" text="Starpība" />
+                  <TableColumn fx:id="Bubble_three" prefWidth="233.0" text="Bubble Sort bez thread (ms) LinkedList" />
+                  <TableColumn fx:id="Bubble_four" prefWidth="217.0" text="Bubble Sort ar thread (ms) LinkedList" />
+                  <TableColumn fx:id="Bubble_Difference_two" prefWidth="64.0" text="Starpība" />
+              </columns>
+            </TableView>
+            <Button layoutX="627.0" layoutY="123.0" mnemonicParsing="false" onAction="#BubbleSortComparing" text="Veikt Mērījumu">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <RadioButton fx:id="onek" layoutX="389.0" layoutY="84.0" mnemonicParsing="false" text="1,000">
+               <toggleGroup>
+                  <ToggleGroup fx:id="BubbleSortAmount" />
+               </toggleGroup>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <Text layoutX="559.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Elementu Daudzums">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="tenk" disable="true" layoutX="491.0" layoutY="84.0" mnemonicParsing="false" text="10,000" toggleGroup="$BubbleSortAmount">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="hundredk" disable="true" layoutX="602.0" layoutY="84.0" mnemonicParsing="false" text="100,000" toggleGroup="$BubbleSortAmount">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="onem" disable="true" layoutX="726.0" layoutY="84.0" mnemonicParsing="false" text="1,000,000" toggleGroup="$BubbleSortAmount">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="tenm" disable="true" layoutX="861.0" layoutY="84.0" mnemonicParsing="false" text="10,000,000" toggleGroup="$BubbleSortAmount">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <Button layoutX="1362.0" layoutY="-14.0" mnemonicParsing="false" onAction="#CloseBubbleSortTable" prefHeight="30.0" prefWidth="31.0" style="-fx-background-color: red;" text="X">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Text fill="RED" layoutX="846.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disabloju Elementu Daudzumus virs 1,000, jo aplikacija paliek unresponsive">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="BubbleSortNavIzvele" fill="RED" layoutX="162.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nav izvēlēts Elementu skaits --&gt;" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

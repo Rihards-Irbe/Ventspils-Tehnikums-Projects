@@ -1,0 +1,41 @@
+# Java / JavaFX
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+target/
+out/
+bin/
+javafx-sdk-*/
+
+.DS_Store
+Thumbs.db
+
+# Laravel / PHP
+/vendor/
+/node_modules/
+/.env
+.env.*
+.phpunit.result.cache
+/storage/*.key
+/storage/*.log
+/storage/framework/cache/data/
+storage/framework/sessions/
+storage/framework/views/
+bootstrap/cache/
+
+composer.lock
+
+*.log
+*.tmp
+
+*.sublime-project
+*.sublime-workspace
+
+# VS Code dependencies
+.vscode/

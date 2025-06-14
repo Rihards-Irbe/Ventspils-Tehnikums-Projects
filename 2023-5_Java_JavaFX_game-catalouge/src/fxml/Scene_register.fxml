@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #92a8d1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller_register">
+   <children>
+      <TextField id="LoginUsername" fx:id="RegisterUsername" layoutX="170.0" layoutY="101.0" onDragDetected="#Remove_Error" prefHeight="25.0" prefWidth="260.0" />
+      <Text layoutX="170.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="241.291015625">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="170.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="241.291015625">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button layoutX="324.0" layoutY="248.0" mnemonicParsing="false" onAction="#SwitchToLogin" prefHeight="63.0" prefWidth="104.0" style="-fx-background-color: lightgray; -fx-border-color: black; -fx-background-radius: 10; -fx-border-radius: 10; -fx-cursor: hand;" text="Back" />
+      <TextField fx:id="RegisterPassword" layoutX="170.0" layoutY="175.0" prefHeight="25.0" prefWidth="260.0" />
+      <Text fx:id="Register_Error_Password" fill="RED" layoutX="176.0" layoutY="192.0" onDragDetected="#Remove_Error" onDragOver="#Remove_Error" onMouseDragged="#Remove_Error" onMouseEntered="#Remove_Error" strokeType="OUTSIDE" strokeWidth="0.0" text="Parole ir tukša" visible="false" wrappingWidth="174.13671875" />
+      <Text fx:id="Register_Error_Username" fill="RED" layoutX="176.0" layoutY="118.0" onDragDetected="#Remove_Error" onDragOver="#Remove_Error" onMouseDragged="#Remove_Error" onMouseEntered="#Remove_Error" strokeType="OUTSIDE" strokeWidth="0.0" text="Lietotājs ir tukšs" visible="false" wrappingWidth="174.13671875" />
+      <Button layoutX="168.0" layoutY="248.0" mnemonicParsing="false" onAction="#Save" prefHeight="63.0" prefWidth="104.0" style="-fx-background-color: lightgray; -fx-border-color: black; -fx-background-radius: 10; -fx-border-radius: 10; -fx-cursor: hand;" text="Save" />
+      <Text fx:id="ErrorUserExsists" fill="RED" layoutX="170.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lietotājs jau eksistē!" visible="false" wrappingWidth="260.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="Saved" fill="#008a07" layoutX="170.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lietotājs saglabāts!" visible="false" wrappingWidth="260.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="AdminCB" layoutX="170.0" layoutY="210.0" mnemonicParsing="false" style="-fx-cursor: hand;" text="Give administrator permission">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>

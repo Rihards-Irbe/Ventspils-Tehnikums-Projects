@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="686.0" prefWidth="837.0" style="-fx-background-color: #92a8d1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller_Cyberpunk2077">
+   <children>
+      <Text fx:id="Cyberpunk2077label" layoutX="4.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cyberpunk2077" textAlignment="CENTER" wrappingWidth="837.0">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Text>
+      <Button fx:id="CyberpunkBack" layoutX="32.0" layoutY="614.0" mnemonicParsing="false" onAction="#SwitchToCatalogue" style="-fx-background-color: lightgray; -fx-border-color: black; -fx-background-radius: 10; -fx-border-radius: 10; -fx-cursor: hand;" text="Back">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Text layoutX="579.0" layoutY="646.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Play soundtrack:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="PlayCP" layoutX="745.0" layoutY="614.0" mnemonicParsing="false" onAction="#PlayCyberpunk2077Soundtrack" style="-fx-background-color: lightgreen; -fx-border-color: black; -fx-background-radius: 10; -fx-border-radius: 10; -fx-cursor: hand;" text="Play">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="StopCP" layoutX="745.0" layoutY="614.0" mnemonicParsing="false" onAction="#StopCyperpunk2077Soundtrack" prefHeight="46.0" prefWidth="80.0" style="-fx-background-color: ED5353; -fx-background-radius: 10; -fx-border-radius: 10; -fx-cursor: hand; -fx-border-color: black;" text="Stop" visible="false">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="CyberpunkEdIt" layoutX="768.0" layoutY="22.0" mnemonicParsing="false" onAction="#EditCP" style="-fx-background-color: lime; -fx-cursor: hand; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: black;" text="Edit" visible="false" />
+      <Text fx:id="CyberpunkAdminTxt" fill="#1a9a21" layoutX="628.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin permissions:" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="CyberpunkEditTextArea" layoutX="40.0" layoutY="83.0" prefHeight="148.0" prefWidth="756.0" text="Cyberpunk 2077 is an open-world, action-adventure RPG set in the megalopolis of Night City, where you play as a cyberpunk mercenary wrapped up in a do-or-die fight for survival. Improved and featuring all-new free additional content, customize your character and playstyle as you take on jobs, build a reputation, and unlock upgrades." visible="false" />
+      <TextField fx:id="CyberpunkEditLabel" alignment="CENTER" layoutX="265.0" layoutY="34.0" prefHeight="39.0" prefWidth="305.0" text="Cyberpunk2077" visible="false" />
+      <Button fx:id="CyberpunkEditMP3Select" layoutX="746.0" layoutY="625.0" mnemonicParsing="false" onAction="#EditSelectMP3" style="-fx-background-color: lightgray; -fx-background-radius: 10; -fx-border-radius: 10; -fx-cursor: hand; -fx-border-color: black;" text="Select File" visible="false" />
+      <Button fx:id="CyberpunkEditDone" layoutX="768.0" layoutY="22.0" mnemonicParsing="false" onAction="#EditDoneCP" style="-fx-background-color: lime; -fx-cursor: hand; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: black;" text="Done" visible="false" />
+      <Text fx:id="CPText" layoutX="50.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cyberpunk 2077 is an open-world, action-adventure RPG set in the megalopolis of Night City, where you play as a cyberpunk mercenary wrapped up in a do-or-die fight for survival. Improved and featuring all-new free additional content, customize your character and playstyle as you take on jobs, build a reputation, and unlock upgrades." wrappingWidth="756.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="CyberpunkImage" fitHeight="362.0" fitWidth="638.0" layoutX="107.0" layoutY="230.0" pickOnBounds="true">
+         <image>
+            <Image url="file:/C:/Users/zeeus/Desktop/VT School Projects/2023-5_Java_JavaFX_game-catalouge/img/Cyberpunkimg.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="ImgSelect" layoutX="380.0" layoutY="397.0" mnemonicParsing="false" onAction="#EditSelectImg" style="-fx-background-color: lightgray; -fx-background-radius: 10; -fx-border-radius: 10; -fx-cursor: hand; -fx-border-color: black;" text="Select Image" visible="false" />
+      <Text fx:id="NoSound" layoutX="345.0" layoutY="641.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No sound selected" visible="false">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="NoImg" layoutX="345.0" layoutY="670.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No image selected" visible="false">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

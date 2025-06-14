@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #92a8d1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller_login">
+   <children>
+      <Button layoutX="324.0" layoutY="248.0" mnemonicParsing="false" onAction="#Login" prefHeight="63.0" prefWidth="104.0" style="-fx-background-color: lightgray; -fx-border-color: black; -fx-background-radius: 10; -fx-border-radius: 10; -fx-cursor: hand;" text="Login" />
+      <Button layoutX="168.0" layoutY="248.0" mnemonicParsing="false" onAction="#SwitchToRegister" prefHeight="63.0" prefWidth="104.0" style="-fx-background-color: lightgray; -fx-border-color: black; -fx-background-radius: 10; -fx-border-radius: 10; -fx-cursor: hand;" text="Register" />
+      <TextField fx:id="LoginUsername" layoutX="170.0" layoutY="101.0" prefHeight="25.0" prefWidth="260.0" />
+      <Text layoutX="170.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="241.291015625">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="170.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="241.291015625">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="Error" fill="RED" layoutX="170.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="260.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="LoginPassword" layoutX="170.0" layoutY="175.0" prefHeight="25.0" prefWidth="260.0" />
+      <Text layoutX="13.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rihards Irbe &amp; Patriks Noass Ercums PT2020" wrappingWidth="313.373046875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

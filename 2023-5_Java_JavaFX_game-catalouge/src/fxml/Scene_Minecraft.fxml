@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="686.0" prefWidth="837.0" style="-fx-background-color: #92a8d1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller_Minecraft">
+   <children>
+      <Text fx:id="MinecraftLabel" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minecraft" textAlignment="CENTER" wrappingWidth="837.0">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Text>
+      <Button fx:id="MinecraftBack" layoutX="32.0" layoutY="614.0" mnemonicParsing="false" onAction="#SwitchToCatalogue" style="-fx-background-color: lightgray; -fx-cursor: hand; -fx-background-radius: 10; -fx-border-radius: 10; -fx-cursor: hand; -fx-border-color: black;" text="Back">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Text layoutX="579.0" layoutY="646.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Play soundtrack:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="PlayMC" layoutX="745.0" layoutY="614.0" mnemonicParsing="false" onAction="#PlayMinecraftSoundtrack" style="-fx-background-color: lightgreen; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: black; -fx-cursor: hand;" text="Play">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="StopMC" layoutX="745.0" layoutY="614.0" mnemonicParsing="false" onAction="#StopMinecraftSoundtrack" prefHeight="46.0" prefWidth="80.0" style="-fx-background-color: ED5353; -fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10; -fx-cursor: hand;" text="Stop" visible="false">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="MinecraftEdIt" layoutX="768.0" layoutY="22.0" mnemonicParsing="false" onAction="#EditMC" style="-fx-background-color: lime; -fx-cursor: hand; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: black;" text="Edit" visible="false" />
+      <Text fx:id="MinecraftAdminTxt" fill="#1a9a21" layoutX="628.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin permissions:" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="MinecraftEditTextArea" layoutX="40.0" layoutY="83.0" prefHeight="148.0" prefWidth="756.0" text="Minecraft is a video game in which players create and break apart various kinds of blocks in three-dimensional worlds. The game’s two main modes are Survival and Creative. In Survival, players must find their own building supplies and food. They also interact with blocklike mobs, or moving creatures. (Creepers and zombies are some of the dangerous ones.)" visible="false" />
+      <TextField fx:id="MinecraftEditLabel" alignment="CENTER" layoutX="311.0" layoutY="28.0" prefHeight="39.0" prefWidth="215.0" text="Minecraft" visible="false" />
+      <Button fx:id="MinecraftEditMP3Select" layoutX="746.0" layoutY="625.0" mnemonicParsing="false" onAction="#EditSelectMP3" style="-fx-background-color: lightgray; -fx-background-radius: 10; -fx-border-radius: 10; -fx-cursor: hand; -fx-border-color: black;" text="Select File" visible="false" />
+      <Button fx:id="MinecraftEditDone" layoutX="768.0" layoutY="22.0" mnemonicParsing="false" onAction="#EditDoneMC" style="-fx-background-color: lime; -fx-cursor: hand; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: black;" text="Done" visible="false" />
+      <Text fx:id="MCText" layoutX="50.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minecraft is a video game in which players create and break apart various kinds of blocks in three-dimensional worlds. The game’s two main modes are Survival and Creative. In Survival, players must find their own building supplies and food. They also interact with blocklike mobs, or moving creatures. (Creepers and zombies are some of the dangerous ones.)" wrappingWidth="756.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="MinecraftImage" fitHeight="362.0" fitWidth="638.0" layoutX="107.0" layoutY="230.0" pickOnBounds="true">
+         <image>
+            <Image url="file:/C:/Users/Rihards/IdeaProjects/Game%20Catalouge/img/Minecraft-image.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="ImgSelect" layoutX="380.0" layoutY="397.0" mnemonicParsing="false" onAction="#EditSelectImg" style="-fx-background-color: lightgray; -fx-background-radius: 10; -fx-border-radius: 10; -fx-cursor: hand; -fx-border-color: black;" text="Select Image" visible="false" />
+      <Text fx:id="NoSound" layoutX="335.0" layoutY="631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No sound selected" visible="false">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="NoImg" layoutX="335.0" layoutY="660.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No image selected" visible="false">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

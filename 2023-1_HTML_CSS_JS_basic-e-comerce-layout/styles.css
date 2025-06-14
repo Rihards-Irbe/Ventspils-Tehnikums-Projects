@@ -1,0 +1,1303 @@
+body{
+background-color: gray;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+h1{
+position: absolute;
+top: 15%;
+Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+h2{
+position: absolute;
+top: 90%;
+color: white;
+left: 45%;
+Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+#poga1{
+Font-size: 50px;
+position: absolute;
+Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+left: 10%;
+top: 1.7%;
+ background-color: gray;
+ width: 14%;
+ text-decoration: none;
+ border: none;
+}
+#poga1:hover {
+ background: orange;
+ cursor: pointer;
+}
+#poga2{
+Font-size: 50px;
+position: absolute;
+Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+left: 42.5%;
+top: 1.7%;
+width: 14%;
+ background-color: gray;
+ text-decoration: none;
+ border: none;
+}
+#poga2:hover {
+ background: orange;
+ cursor: pointer;
+}
+#poga3{
+Font-size: 50px;
+position: absolute;
+Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+left: 73%;
+top: 1.7%;
+width: 14%;
+background-color: gray;
+ text-decoration: none;
+ border: none;
+}
+#poga3:hover {
+ background: orange;
+ cursor: pointer;
+}
+.square {
+  position: absolute;
+  left: 0px;
+  top: 0%;
+  height: 10%;
+  width: 100%;
+  background-color: #555;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.square2 {
+  position: absolute;
+  left: 0px;
+  top: 90%;
+  height: 10%;
+  width: 100%;
+  background-color: Black;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#cpu{
+
+  position: absolute;
+  left: 270px;
+  top: 15%;
+  height: 300px; 
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  background-image: url('https://techmatched.pk/wp-content/uploads/2022/03/4-5.png');
+  animation-name: shrunk;
+  animation-duration: 1s;
+  padding-right: 30px;
+  padding-left: 30px;
+
+}
+
+#cpu:hover{
+  animation-duration: 1s;
+  animation-name: grow;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+@keyframes grow{
+  from {
+    background-size: 300px 300px;
+  }
+
+  to {
+    background-size: 350px 350px;
+  }
+}
+
+@keyframes shrunk{
+  from {
+    background-size: 350px 350px;
+  }
+
+  to {
+    background-size: 300px 300px;
+  }
+}
+
+#gpu{
+
+  position: absolute;
+  left: 770px;
+  top: 15%;
+  height: 300px; 
+  width: 400px;
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  background-image: url('https://www.gigabyte.com/FileUpload/Global/KeyFeature/1635/innergigabyteimages/kf-img.png');
+  animation-name: shrunkgpu;
+  animation-duration: 1s;
+  padding-right: 30px;
+  padding-left: 30px;
+
+}
+
+#gpu:hover{
+  animation-duration: 1s;
+  animation-name: growgpu;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+ }
+ 
+ @keyframes growgpu{
+  from {
+    background-size: 300px 300px;
+  }
+
+  to {
+    background-size: 350px 350px;
+  }
+}
+
+@keyframes shrunkgpu{
+  from {
+    background-size: 350px 350px;
+  }
+
+  to {
+    background-size: 300px 300px;
+  }
+}
+
+#mobo{
+
+  position: absolute;
+  left: 1320px;
+  top: 15%;
+  height: 300px; 
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  background-image: url('https://www.dateks.lv/images/pic/2400/2400/954/1085.jpg');
+  animation-name: shrunk;
+  animation-duration: 1s;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+#mobo:hover{
+  animation-duration: 1s;
+  animation-name: grow;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+#psu{
+	
+  position: absolute;
+  left: 270px;
+  top: 53%;
+  height: 300px; 
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  background-image: url('https://www.dateks.lv/images/pic/2400/2400/835/1082.jpg');
+  animation-name: shrunk;
+  animation-duration: 1s;
+  padding-right: 30px;
+  padding-left: 30px;
+	
+}
+
+#psu:hover{
+  animation-duration: 1s;
+  animation-name: grow;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+#pccase{
+	
+  position: absolute;
+  left: 770px;
+  top: 53%;
+  height: 300px; 
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  background-image: url('https://aerocool.io/wp-content/uploads/2018/05/AeroCool-Cylon-Product-Gallery.png');
+  animation-name: shrunk;
+  animation-duration: 1s;
+  padding-right: 30px;
+  padding-left: 30px;
+	
+}
+
+#pccase:hover{
+  animation-duration: 1s;
+  animation-name: grow;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+#ssd{
+	
+  position: absolute;
+  left: 1320px;
+  top: 53%;
+  height: 300px; 
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  background-image: url('https://images.samsung.com/is/image/samsung/p6pim/lv/mz-v8v1t0bw/gallery/lv-980-nvme-m2-ssd-mz-v8v1t0bw-505022413?$650_519_PNG$');
+  animation-name: shrunk;
+  animation-duration: 1s;
+  padding-right: 30px;
+  padding-left: 30px;
+	
+}
+
+#ssd:hover{
+  animation-duration: 1s;
+  animation-name: grow;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+#my-square {
+  position: absolute;
+  background-color: white;
+  width: 800px;
+  height: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+#my-square.fade-in {
+  animation: fadeIn 1s;
+}
+
+#my-square.fade-out {
+  animation: fadeOut 1s;
+}
+
+.square_style{
+    
+  position: absolute;
+  background-color: white;
+  width: 800px;
+  height: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 10px;
+    
+}
+
+.square_style_2{
+    
+  position: absolute;
+  background-color: white;
+  width: 800px;
+  height: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 10px;
+    
+}
+
+#my-square_2.fade-in {
+  animation: fadeIn 1s;
+}
+
+#my-square_2.fade-out {
+  animation: fadeOut 1s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+#cpu_picture{
+	
+	position: absolute;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+	
+}
+
+#gpu_picture{
+    
+    position: absolute;
+	left: 3%;
+    background-color: white;
+    width: 350px;
+    height: 300px;
+    
+}
+
+#cpu_title{
+	
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+#description_2{
+	
+	position: relative;
+	top:2%;
+	left: 33%;
+	font-size: 30px;
+	Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	
+}
+
+#Close{
+	
+	position: absolute;
+	top:0%;
+	left: 101%;
+	width: 50px;
+    height: 50px;
+	background-color: red;
+	cursor: pointer;
+	
+}
+
+#Close_2{
+	
+	position: absolute;
+	top:0%;
+	left: 101%;
+	width: 50px;
+    height: 50px;
+	background-color: red;
+	cursor: pointer;
+	
+}
+
+.cpu_description_2{
+	
+	position: relative;
+	top:2%;
+	left: 33%;
+	font-size: 30px;
+	Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	
+}
+
+#cpu_description{
+    
+    position: relative;
+	top:2%;
+	left: 33%;
+	font-size: 30px;
+	Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    
+}
+
+#parmums{
+	
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+  Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	
+}
+
+#Start{
+	
+	position: absolute;
+	left:42%;
+	
+}
+
+#main_picture{
+	
+  position: absolute;
+  left: 19%;
+  top: 27%;
+  height: 600px; 
+  width: 1200px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+	
+}
+
+#Tehniskais{
+	
+  position: absolute;
+  top: 30%;
+  text-align: justify;
+  letter-spacing: 3px;
+  font-family: 'Merriweather';
+	
+}
+
+#image-container {
+  position: absolute;
+  left: 19%;
+  top: 27%;
+  height: 600px; 
+  width: 1200px;
+  background-repeat: no-repeat;
+}
+
+#image-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#image-container img.active {
+  display: block;
+}
+
+#prev-arrow, #next-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+
+#prev-arrow {
+  left: 10px;
+  cursor: pointer;
+}
+
+#next-arrow {
+  right: 10px;
+  cursor: pointer;
+}
+
+#clicktopreces{
+	
+	cursor: pointer;
+	
+}
+
+#gpu_description{
+    
+    position: relative;
+	top:2%;
+	left: 50%;
+	font-size: 30px;
+	Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    
+}
+
+#gpu_title{
+    
+    font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.gpu_description_2{
+    
+    position: relative;
+	top:2%;
+	left: 50%;
+	font-size: 30px;
+	Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    
+}
+
+#square_style_3{
+	
+  position: absolute;
+  background-color: white;
+  width: 800px;
+  height: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 10px;
+	
+}
+
+#mobo_title{
+	
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+#mobo_picture{
+	
+	position: absolute;
+    width: 300px;
+    height: 300px;
+	
+}
+
+#mobo_description{
+	
+	position: relative;
+	top:2%;
+	left: 40%;
+	font-size: 30px;
+	Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	
+}
+
+.mobo_description_2{
+	
+	position: relative;
+	top:2%;
+	left: 40%;
+	font-size: 30px;
+	Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	
+}
+
+#my-square_3.fade-in {
+  animation: fadeIn 1s;
+}
+
+#my-square_3.fade-out {
+  animation: fadeOut 1s;
+}
+
+.square_style_3{
+	
+  position: absolute;
+  background-color: white;
+  width: 800px;
+  height: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 10px;
+	
+}
+
+#Close_3{
+	
+	position: absolute;
+	top:0%;
+	left: 101%;
+	width: 50px;
+    height: 50px;
+	background-color: red;
+	cursor: pointer;
+	
+}
+
+#square_style_4{
+	
+  position: absolute;
+  background-color: white;
+  width: 800px;
+  height: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 10px;
+	
+}
+
+#psu_title{
+	
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+#psu_picture{
+	
+	position: absolute;
+    width: 300px;
+    height: 300px;
+	
+}
+
+#psu_description{
+	
+	position: relative;
+	top:2%;
+	left: 40%;
+	font-size: 30px;
+	Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	
+}
+
+.psu_description_2{
+	
+	position: relative;
+	top:2%;
+	left: 40%;
+	font-size: 30px;
+	Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	
+}
+
+#my-square_4.fade-in {
+  animation: fadeIn 1s;
+}
+
+#my-square_4.fade-out {
+  animation: fadeOut 1s;
+}
+
+.square_style_4{
+	
+  position: absolute;
+  background-color: white;
+  width: 800px;
+  height: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 10px;
+	
+}
+
+#Close_4{
+	
+	position: absolute;
+	top:0%;
+	left: 101%;
+	width: 50px;
+    height: 50px;
+	background-color: red;
+	cursor: pointer;
+	
+}
+
+#square_style_5{
+	
+  position: absolute;
+  background-color: white;
+  width: 800px;
+  height: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 10px;
+	
+}
+
+#pccase_title{
+	
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+#pccase_picture{
+	
+	position: absolute;
+    width: 300px;
+    height: 300px;
+	
+}
+
+#pccase_description{
+	
+	position: relative;
+	top:2%;
+	left: 40%;
+	font-size: 30px;
+	Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	
+}
+
+.pccase_description_2{
+	
+	position: relative;
+	top:2%;
+	left: 40%;
+	font-size: 30px;
+	Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	
+}
+
+#my-square_5.fade-in {
+  animation: fadeIn 1s;
+}
+
+#my-square_5.fade-out {
+  animation: fadeOut 1s;
+}
+
+.square_style_5{
+	
+  position: absolute;
+  background-color: white;
+  width: 800px;
+  height: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 10px;
+	
+}
+
+#Close_5{
+	
+	position: absolute;
+	top:0%;
+	left: 101%;
+	width: 50px;
+    height: 50px;
+	background-color: red;
+	cursor: pointer;
+	
+}
+
+#square_style_6{
+	
+  position: absolute;
+  background-color: white;
+  width: 800px;
+  height: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 10px;
+	
+}
+
+#ssd_title{
+	
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+#ssd_picture{
+	
+	position: absolute;
+    width: 300px;
+    height: 300px;
+	
+}
+
+#ssd_description{
+	
+	position: relative;
+	top:2%;
+	left: 40%;
+	font-size: 30px;
+	Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	
+}
+
+.ssd_description_2{
+	
+	position: relative;
+	top:2%;
+	left: 40%;
+	font-size: 30px;
+	Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	
+}
+
+#my-square_6.fade-in {
+  animation: fadeIn 1s;
+}
+
+#my-square_6.fade-out {
+  animation: fadeOut 1s;
+}
+
+.square_style_6{
+	
+  position: absolute;
+  background-color: white;
+  width: 800px;
+  height: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 10px;
+	
+}
+
+#Close_6{
+	
+	position: absolute;
+	top:0%;
+	left: 101%;
+	width: 50px;
+    height: 50px;
+	background-color: red;
+	cursor: pointer;
+	
+}
+
+#price_txt{
+	
+	position: absolute;
+	top:80%;
+	left: 10%;
+	font-size: 50px;
+	Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+#price_ammount{
+	
+	position: absolute;
+	top:80%;
+	left: 27%;
+	font-size: 50px;
+	font-weight: bold;
+	Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+.button-68 {
+  position: absolute;
+  top: 10.5%;
+  left: 63%;
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button-68:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.button-68:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.button-68:hover {
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
+
+#Purchase_button_placement{
+	
+	position: absolute;
+	top: 86%;
+    left: 63%;
+}
+
+#cart-btn {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+#cart-dropdown {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  background-color: white;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid gray;
+  z-index: 1;
+  border-radius: 15px;
+  font-size: 25px;
+  Font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  
+}
+
+.hidden {
+  display: none;
+}
+
+#button-68{
+    
+  position: absolute;
+  top: 7.5%;
+  left: 57%;
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+    
+}
+
+#button-68:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+#button-68:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+#button-68:hover {
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
+    
+#button-68_gpu_placement{
+        
+  position: absolute;
+  top: 15.5%;
+  left: 57%;
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center5
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+        
+    }
+
+#button-68_gpu_placement:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+#button-68_gpu_placement:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+#button-68_mobo_placement{
+    
+  position: absolute;
+  top: 24%;
+  left: 57%;
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center5
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+        
+    }
+
+#button-68_mobo_placement:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+#button-68_mobo_placement:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+#button-68_psu_placement{
+    
+  position: absolute;
+  top: 32.5%;
+  left: 57%;
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center5
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+        
+    }
+
+#button-68_psu_placement:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+#button-68_psu_placement:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+#button-68_pccase_placement{
+    
+  position: absolute;
+  top: 12%;
+  left: 57%;
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center5
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+        
+    }
+
+#button-68_pccase_placement:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+#button-68_pccase_placement:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+#button-68_pccase_placement{
+    
+  position: absolute;
+  top: 12%;
+  left: 57%;
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center5
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+    
+    }
+
+#button-68_pccase_placement:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+#button-68_pccase_placement:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+#button-68_ssd_placement{
+    
+  position: absolute;
+  top: 15.5%;
+  left: 57%;
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center5
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+        
+    }
+
+#button-68_ssd_placement:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+#button-68_ssd_placement:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}

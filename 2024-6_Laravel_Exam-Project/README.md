@@ -2,11 +2,30 @@
 
 ## Demonstration
 
-<div align="center">
-  <a href="https://www.youtube.com/watch?v=AH4-PYL9rf0" target="_blank">
-    <img src="https://img.youtube.com/vi/AH4-PYL9rf0/maxresdefault.jpg" alt="Watch the demo on YouTube" style="width:80%; max-width:600px;">
+<div align="center" style="position: relative; display: inline-block; cursor: pointer;">
+  <a href="https://www.youtube.com/watch?v=AH4-PYL9rf0" target="_blank" style="display: block; position: relative;">
+    <img src="https://img.youtube.com/vi/AH4-PYL9rf0/maxresdefault.jpg" alt="Watch the demo on YouTube" style="width:80%; max-width:600px; display: block;">
+    <!-- Play button overlay -->
+    <div style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80px;
+      height: 80px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    ">
+      <svg height="40" viewBox="0 0 24 24" width="40" fill="white" style="margin-left: 5px;">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+    </div>
   </a>
 </div>
+
 
 ## Overview  
 This is my **Ventspils Tehnikums Exam project**, the project is called: *"Rihify"* as a mix between *Rihards* and *Spotify*. **Rihify** is a music listening website, where you can interact with music, that other people have uploaded, create playlists and save your favorites by liking them. The UI is user friendly and has some QOL features, like shuffling playlists, playing songs on repeat and being able to skip songs.

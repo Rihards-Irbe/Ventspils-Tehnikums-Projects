@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="https://www.youtube.com/watch?v=AH4-PYL9rf0" target="_blank">
-    <img src="https://img.youtube.com/vi/AH4-PYL9rf0/hqdefault.jpg" alt="Watch the demo on YouTube" style="width:80%; max-width:600px;">
+    <img src="https://img.youtube.com/vi/AH4-PYL9rf0/maxresdefault.jpg" alt="Watch the demo on YouTube" style="width:80%; max-width:600px;">
   </a>
 </div>
 

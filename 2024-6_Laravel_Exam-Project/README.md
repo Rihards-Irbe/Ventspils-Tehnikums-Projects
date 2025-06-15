@@ -2,8 +2,11 @@
 
 ## Demonstration
 
-[![Watch Rihify Demo on YouTube](https://img.youtube.com/vi/AH4-PYL9rf0/hqdefault.jpg)](https://www.youtube.com/watch?v=AH4-PYL9rf0)
-
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=AH4-PYL9rf0" target="_blank">
+    <img src="https://img.youtube.com/vi/AH4-PYL9rf0/hqdefault.jpg" alt="Watch the demo on YouTube" style="width:80%; max-width:600px;">
+  </a>
+</div>
 
 ## Overview  
 This is my **Ventspils Tehnikums Exam project**, the project is called: *"Rihify"* as a mix between *Rihards* and *Spotify*. **Rihify** is a music listening website, where you can interact with music, that other people have uploaded, create playlists and save your favorites by liking them. The UI is user friendly and has some QOL features, like shuffling playlists, playing songs on repeat and being able to skip songs.

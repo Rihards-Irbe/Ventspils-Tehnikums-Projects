@@ -1,0 +1,1 @@
+Open Stored_Songs folder and paste the given songs to this path: /public/storage/Songs

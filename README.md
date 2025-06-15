@@ -9,7 +9,7 @@ Each project is organized by date and topic, covering various technologies and s
 These are **not all** the projects I completed during my time at Ventspils Tehnikums. Due to access restrictions placed after graduation, many of my past projects are no longer available to me.
 ## 📂 Project Structure
 
-Projects are named using the following format: ```date```-```programming language/s```_```project name```
+Projects are named using the following format: ```date```_```programming language/s```-```project name```.
 
 Each project includes its own `README.md` with a full explanation, features, and setup instructions. Some also include **images** and my exam project has a **demonstration video**.
 

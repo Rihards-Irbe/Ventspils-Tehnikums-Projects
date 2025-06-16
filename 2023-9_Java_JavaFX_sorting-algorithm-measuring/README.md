@@ -1,4 +1,4 @@
-# 2023-3_Java_JavaFX_game-catalouge
+# 2023-9_Java_JavaFX_sorting-algorithm-measuring
 
 ![Main Scene](project_images/main_scene.png)
 ![Bulk Measurement](project_images/main_scene_bulk_measurement.png)

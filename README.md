@@ -8,8 +8,8 @@ Each project is organized by date and topic, covering various technologies and s
 
 Here are some highlights from the repository:
 
-- **2024-6_Laravel_Exam-Project** – A Laravel based music streaming website developed as part of my exam project. This project contributed to earning a diploma for excellence in programming.
-- **2023-9_Java_JavaFX_sorting-algorithm-measuring** -  A Java application using JavaFX to visualize and measure the performance of various sorting algorithms.
+- [**2024-6_Laravel_Exam-Project**](https://github.com/Rihards-Irbe/Ventspils-Tehnikums-Projects/tree/main/2024-6_Laravel_Exam-Project) – A Laravel based music streaming website developed as part of my exam project. This project contributed to earning a diploma for excellence in programming.
+- [**2023-9_Java_JavaFX_sorting-algorithm-measuring**](https://github.com/Rihards-Irbe/Ventspils-Tehnikums-Projects/tree/main/2023-9_Java_JavaFX_sorting-algorithm-measuring) -  A Java application using JavaFX to visualize and measure the performance of various sorting algorithms.
 
 ## 📂 Project Structure
 

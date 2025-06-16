@@ -17,7 +17,7 @@ Projects are named using the following format: ```date```_```programming languag
 
 Each project includes its own `README.md` with a full explanation, features, and setup instructions. Some also include **images** and my exam project has a **demonstration video**.
 
-## 📌 Disclaimer
+## 📌 Note
 
 These are **not all** the projects I completed during my time at Ventspils Tehnikums. Due to access restrictions placed after graduation, many of my past projects are no longer available to me.
 

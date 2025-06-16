@@ -22,6 +22,13 @@ This is my **Ventspils Tehnikums Exam project**, the project is called: *"Rihify
 - Real-time validation with input feedback and form memory for better UX.
 - Admin dashboard (if applicable) for managing users and content.
 
+## Additional Materials
+
+[Rihify Presentation (PDF)](Rihards%20Irbe%20Rihify%20Prezentācija.pdf)
+
+[Rihify Documentation (PDF)](Rihards%20Irbe%20Rihify%20Dokumentacija.pdf)
+
+
 ## How to Run
 
 Follow the steps below to set up and run this Laravel project using Visual Studio Code, XAMPP, and MySQL Workbench.

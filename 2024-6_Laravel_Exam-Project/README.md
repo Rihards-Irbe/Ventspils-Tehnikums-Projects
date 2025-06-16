@@ -24,9 +24,9 @@ This is my **Ventspils Tehnikums Exam project**, the project is called: *"Rihify
 
 ## Additional Materials
 
-[Rihify Presentation (PDF)](Rihards%20Irbe%20Rihify%20Prezentācija.pdf)
+- [Rihify Presentation (PDF)](Rihards%20Irbe%20Rihify%20Prezentācija.pdf)
 
-[Rihify Documentation (PDF)](Rihards%20Irbe%20Rihify%20Dokumentacija.pdf)
+- [Rihify Documentation (PDF)](Rihards%20Irbe%20Rihify%20Dokumentacija.pdf)
 
 
 ## How to Run
